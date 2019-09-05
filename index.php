@@ -1,6 +1,6 @@
 <?php 
 $root = $_SERVER['DOCUMENT_ROOT'];
-
+echo "hi";
 ?><!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
