@@ -1,6 +1,6 @@
 <?php 
 $root = $_SERVER['DOCUMENT_ROOT'];
-echo "hi";
+
 ?><!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -356,7 +356,9 @@ We specialize in research, measurement, statistical modeling, and branding & com
                                  <li>
                                  Finance
                                  </li>
+								 <li>
                                  eCommerce
+								 </li>
                                  <li>
                                  Travel
                                  </li>
@@ -377,7 +379,8 @@ We specialize in research, measurement, statistical modeling, and branding & com
                     </div>
                     <!-- .col-md-6 end -->
                     <!-- Feature Card #4 -->
-                    <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
+
+                    <!-- <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="feature-card">
                             <div class="feature-card-icon">
                                 <i class="icon-clipboard"></i>
@@ -387,7 +390,8 @@ We specialize in research, measurement, statistical modeling, and branding & com
                                 <p class="feature-card-desc">Our experts are always available over the phone and online. Web chat is available from 8am to 8pm or you can give us a call for free.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
                     <!-- .col-md-6 end -->
                 </div>
                 <!-- .row end -->
@@ -668,14 +672,28 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                         <i class="icon-map"></i>
                     </div>
                     <div class="feature-card-content">
-                        <h3 class="feature-card-title">Estate Planning </h3>
-                        <p class="feature-card-desc">Estate planning is the process of anticipating and arranging, during a person's life, for the management and disposal.</p>
+                        <h3 class="feature-card-title">Metriken Analytics</h3>
+                        <p class="feature-card-desc">
+						With analytics you get a deeper understanding of your customers. With the help of tools MIB helps you analyze data for your business. Using the analytics insight you can reach the right customer.
+						 With easy to use interface and shareable reports we can help make your data work for you.
+						</p>
+						<ul>
+						<li>
+						You can optimize your market place
+						</li>
+						<li>
+					    Get deeper insight on how users engage with your site
+						</li>
+						<li>
+						You can be a small, medium or enterprise business and still find a solution that fits your business need 
+						</li>
+						</ul>
                     </div>
                 </div>
             </div>
             <!-- .col-lg-4 end -->
             <!-- Feature Card #5 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <!-- <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="feature-card">
                     <div class="feature-card-icon">
                         <i class="icon-bargraph"></i>
@@ -685,10 +703,10 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                         <p class="feature-card-desc">Support major currencies: USD, EUR, GBP, and various Cryptocurrencies. Funds exchanged between currencies at market rate.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- .col-lg-4 end -->
             <!-- Feature Card #6 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <!-- <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="feature-card">
                     <div class="feature-card-icon">
                         <i class="icon-shield"></i>
@@ -698,7 +716,7 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                         <p class="feature-card-desc">The first thing to know about blockchain smart contracts is they're not contracts, smart, nor necessarily on a blockchain.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- .col-lg-4 end -->
         </div>
         <!-- .row end -->
