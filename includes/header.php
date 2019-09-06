@@ -2,8 +2,8 @@
 	<nav id="primary-menu" class="navbar navbar-expand-lg navbar-light navbar-bordered navbar-static-top" >
 		<div class="container">
 			<a class="navbar-brand" href="index-2.html">
-				<img class="logo logo-light" src="assets/images/logo/Metriken.png" alt="Consultivo Logo" height="90vh";width="690vw;">
-				<img class="logo logo-dark" src="assets/images/logo/Metriken.png" alt="Consultivo Logo">
+				<img class="logo logo-light" src="assets/images/logo/MIB.png" alt="Consultivo Logo" height="90vh";width="690vw;">
+				<img class="logo logo-dark" src="assets/images/logo/MIB.png" alt="Consultivo Logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -198,7 +198,7 @@
 				<div class="module-container">
 				<!-- Module Consultation  -->
 <div class="module module-consultation pull-left">
-	<a class="btn" href="page-contact.html">Get Call</a>
+	<a class="btn" href="page-contact.html"><i class="fa fa-whatsapp" style="font-size:15px" aria-hidden="true"></i> Get Call</a>
 </div>				<!-- Module Search -->
 <!-- <div class="module module-search pull-left">
 	<div class="module-icon search-icon">
@@ -222,11 +222,13 @@
 </div> -->
 <!-- .module-search end -->				<!-- Module Cart -->
 <div class="module module-cart pull-left">
-	<div class="module-icon cart-icon">
-		<i class="lnr lnr-cart"></i>
+	<!--<div class="module-icon cart-icon">
+		<i class="lnr lnr-cart"></i><i class="fa fa-whatsapp" aria-hidden="true"></i>
+
 		<span class="title">shop cart</span>
 		<label class="module-label">2</label>
-	</div>
+	</div>-->
+	<!--
 	<div class="module-content module-box cart-box">
 		<div class="cart-overview">
 			<ul class="list-unstyled">
@@ -262,7 +264,7 @@
 			<a class="btn btn--primary btn--rounded" href="#">view cart</a>
 			<a class="btn btn--white btn--bordered btn--rounded" href="#">Checkout</a>
 		</div>
-	</div>
+	</div>-->
 </div>
 <!-- .module-cart end -->				</div>
 			</div>

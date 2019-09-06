@@ -10,6 +10,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!--IE Compatibility Meta-->
 <meta name="author" content="zytheme"/>
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Consulting Business Consulting Finance Html5 Template">
 <link href="assets/images/favicon/favicon.png" rel="icon">
@@ -36,6 +37,12 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 <!-- Document Title
     ============================================= -->
 <title>Consultivo | Consulting Business Consulting Finance Html5 Template</title>
+<style>
+.list-group li{
+text-align:left !important;
+
+}
+    </style>
 </head>
 <body>
 <div class="preloader">
@@ -282,7 +289,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 <section id="featured4" class="featured featured-4 featured-left pt-110 pb-100">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8">
+            <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="row">
                     <!-- Feature Card #1 -->
                     <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
@@ -298,6 +305,53 @@ We specialize in research, measurement, statistical modeling, and branding & com
  to improve your business performance.
  
                               </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-card-icon">
+                                <i class="icon-layers"></i>
+                            </div>
+                            <div class="feature-card-content">
+                                <h3 class="feature-card-title">Sectors We Work </h3>
+                                <!-- <p class="feature-card-desc"></p> -->
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                 <ul class="list-group">
+                                 <li class="list-group-item list-group-item-action" >
+                                 Retail – Jewellery, Automobile
+                                 </li>
+                                 <li class="list-group-item list-group-item-action">
+                                 Start-Ups
+                                 </li>
+                                 <li class="list-group-item list-group-item-action">
+                                 SMB
+                                 </li>
+                                 <li class="list-group-item list-group-item-action">
+                                 Finance
+                                 </li>
+								 <li class="list-group-item list-group-item-action">
+                                 eCommerce
+                                 </li>
+</ul>
+</div>
+<div class="col-sm-6">
+    <ul class="list-group">
+                                 <li class="list-group-item list-group-item-action">
+                                 Travel
+                                 </li>
+                                 <li class="list-group-item list-group-item-action">
+                                 Education
+                                 </li>
+                                 <li class="list-group-item list-group-item-action" >
+                                 Manufacturing
+                                 </li>
+                                 <li class="list-group-item list-group-item-action">
+                                 Healthcare
+                                 </li>
+                                 </ul>
+                                 </div></div>
+                                
                             </div>
                         </div>
                     </div>
@@ -318,13 +372,16 @@ We specialize in research, measurement, statistical modeling, and branding & com
                          and branding & communication studies offering comprehensive solutions to improve your business performance.
 
                               </p>
-                              <li>	We package your product or service
+                              <ul class="list-group">
+                              <li class="list-group-item list-group-item-action">	We package your product or service
                               </li>
-                              <li>Take all measures to market your products / services</li>
-                              <li>Identify the right place to sell or advertise your product / service</li>
-                              <li>Advise different mediums to help you reach your target audience</li>
-                              <li>Present to you the expected conversion ration based on research</li>
-                              <p class="feature-card-desc">
+                              <li class="list-group-item list-group-item-action">Take all measures to market your products / services</li>
+                              <li class="list-group-item list-group-item-action">Identify the right place to sell or advertise your product / service</li>
+                              <li class="list-group-item list-group-item-action">Advise different mediums to help you reach your target audience</li>
+                              <li class="list-group-item list-group-item-action">Present to you the expected conversion ration based on research</li>
+</ul>
+<br/>
+<p class="feature-card-desc">
                               Comprising of a dynamic team with vast expertise in understanding brands, consumers, stakeholders – MIB proposes 360 degree business marketing and 
                               sales strategies covering both online and offline media. 
                               </p>
@@ -335,46 +392,7 @@ We specialize in research, measurement, statistical modeling, and branding & com
                     <!-- .col-md-6 end -->
                     <!-- Feature Card #3 -->
                     <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="feature-card">
-                            <div class="feature-card-icon">
-                                <i class="icon-layers"></i>
-                            </div>
-                            <div class="feature-card-content">
-                                <h3 class="feature-card-title">Sectors We Work </h3>
-                                <!-- <p class="feature-card-desc"></p> -->
-                                 <ul>
-                                 <li>
-                                 Retail – Jewellery, Automobile
-                                 </li>
-                                 <li>
-                                 Start-Ups
-                                 </li>
-                                 <li>
-                                 SMB
-                                 </li>
-                                 <li>
-                                 Finance
-                                 </li>
-								 <li>
-                                 eCommerce
-								 </li>
-                                 <li>
-                                 Travel
-                                 </li>
-                                 <li>
-                                 Education
-                                 </li>
-                                 <li>
-                                 Manufacturing
-                                 </li>
-                                 <li>
-                                 Healthcare
-                                 </li>
-                                 </ul>
-                                
-                                
-                            </div>
-                        </div>
+      
                     </div>
                     <!-- .col-md-6 end -->
                     <!-- Feature Card #4 -->
@@ -597,7 +615,7 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
         <!-- .row end -->
         <div class="row">
             <!-- Feature Card #1 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="feature-card">
                     <div class="feature-card-icon">
                         <i class="icon-presentation"></i>
@@ -606,19 +624,19 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                         <h3 class="feature-card-title">Metriken Consulting</h3>
                         <p class="feature-card-desc">Based on our experience and expertise we recommend branding and marketing strategy for your company, products, or services. We offer customized solutions relevant to solve your business challenges
                         </p>
-                        <ul>
-                        <li>We suggest package your product or service</li>
-                        <li>Advise relevant  measures to market your products / services</li>
-                        <li>Identify the right place to sell or advertise your product / service</li>
-                        <li>Advise different mediums to help you reach your target audience</li>
-                        <li>Present to you the expected conversion ration based on research</li>
+                        <ul class="list-group">
+                        <li class="list-group-item list-group-item-action">We suggest package your product or service</li>
+                        <li class="list-group-item list-group-item-action">Advise relevant  measures to market your products / services</li>
+                        <li class="list-group-item list-group-item-action">Identify the right place to sell or advertise your product / service</li>
+                        <li class="list-group-item list-group-item-action">Advise different mediums to help you reach your target audience</li>
+                        <li class="list-group-item list-group-item-action">Present to you the expected conversion ration based on research</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- .col-lg-4 end -->
             <!-- Feature Card #2 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="feature-card">
                     <div class="feature-card-icon">
                         <i class="icon-search"></i>
@@ -627,19 +645,19 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                         <h3 class="feature-card-title">Metriken Digital</h3>
                         <p class="feature-card-desc">We offer customized and comprehensive marketing and sales solutions to SMB’s, Retail, Start-ups and financial institutes. 
                         Our solutions are practical and can be successfully implemented. </p>
-                        <ul>
-                        <li>We write marketing plans </li>
-                        <li>Develop result driven strategies to obtain sales and marketing goals</li>
-                        <li>Plan & Execute marketing campaign</li>
-                        <li>Help coordinate marketing efforts and activities</li>
-                        <li>Help you maximize return on every marketing effort</li>
+                        <ul class="list-group">
+                        <li class="list-group-item list-group-item-action">We write marketing plans </li>
+                        <li class="list-group-item list-group-item-action">Develop result driven strategies to obtain sales and marketing goals</li>
+                        <li class="list-group-item list-group-item-action">Plan & Execute marketing campaign</li>
+                        <li class="list-group-item list-group-item-action">Help coordinate marketing efforts and activities</li>
+                        <li class="list-group-item list-group-item-action">Help you maximize return on every marketing effort</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!-- .col-lg-4 end -->
             <!-- Feature Card #3 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="feature-card">
                     <div class="feature-card-icon">
                         <i class="icon-piechart"></i>
@@ -649,14 +667,14 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                         <p class="feature-card-desc">Our integrated marketing initiatives are aimed at gaining successful conversion and ROI.
                           Our process involves succinct communication about the brand, create awareness to the target audience, 
                         engage and further connect with them to build long term brand loyalty.</p>
-                        <ul>
-                        <li>
+                        <ul class="list-group">
+                        <li class="list-group-item list-group-item-action">
                         We develop communication strategy that promotes your business information amongst influencer. 
                         </li>
-                        <li>
+                        <li class="list-group-item list-group-item-action">
                         We offer expert PR consulting to establish business awareness in domestic and international market
                         </li>
-                        <li>
+                        <li class="list-group-item list-group-item-action">
                         	We promote your business to clients using  social media landscape and the key trends within various sectors of the market
                         </li>
                         </ul>
@@ -665,7 +683,7 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
             </div>
             <!-- .col-lg-4 end -->
             <!-- Feature Card #4 -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="feature-card">
                     <div class="feature-card-icon">
                         <i class="icon-map"></i>
@@ -676,14 +694,14 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
 						With analytics you get a deeper understanding of your customers. With the help of tools MIB helps you analyze data for your business. Using the analytics insight you can reach the right customer.
 						 With easy to use interface and shareable reports we can help make your data work for you.
 						</p>
-						<ul>
-						<li>
+						<ul class="list-group">
+						<li class="list-group-item list-group-item-action">
 						You can optimize your market place
 						</li>
-						<li>
+						<li class="list-group-item list-group-item-action">
 					    Get deeper insight on how users engage with your site
 						</li>
-						<li>
+						<li class="list-group-item list-group-item-action">
 						You can be a small, medium or enterprise business and still find a solution that fits your business need 
 						</li>
 						</ul>
