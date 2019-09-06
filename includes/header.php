@@ -15,7 +15,7 @@
 				<!-- Home Menu-->
 <li class="has-dropdown active">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">Home</a>
-    <ul class="dropdown-menu">
+    <!-- <ul class="dropdown-menu">
         <li>
             <a href="home-consulting.html">Home Consulting</a>
         </li>
@@ -28,14 +28,14 @@
         <li>
             <a href="home-advisory.html">Home advisory</a>
        </li>
-    </ul> 
+    </ul>  -->
 </li>
 <!-- li end -->
 
 <!-- Pages Menu -->
 <li class="has-dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item" data-hover="pages">About</a>
-    <ul class="dropdown-menu">
+    <!-- <ul class="dropdown-menu">
         <li>
             <a href="page-about.html">About US</a>
         </li>
@@ -54,7 +54,7 @@
         <li>
             <a href="page-consultation.html">consultation</a>
         </li>
-    </ul>
+    </ul> -->
 </li>
 <!-- li end -->
 <!-- Services Menu-->
@@ -75,8 +75,8 @@
 <!-- li end -->
 <!-- Studies Menu-->
 <li class="has-dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">Case Studies</a>
-    <ul class="dropdown-menu">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">Contact Us</a>
+    <!-- <ul class="dropdown-menu">
         <li>
             <a href="case-studies-grid.html">case grid</a>
         </li>
@@ -86,7 +86,7 @@
         <li>
             <a href="case-study-single.html">case single</a>
         </li>
-    </ul>
+    </ul> -->
 </li>
 <!-- li end -->
 
@@ -108,7 +108,7 @@
 <!-- li end -->
 
 <!-- shop Menu -->
-<li class="has-dropdown">
+<!-- <li class="has-dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item" data-hover="shop">shop</a>
     <ul class="dropdown-menu">
         <li>
@@ -121,17 +121,17 @@
             <a href="shop-single.html">shop single</a>
         </li>
     </ul>
-</li>
+</li> -->
 <!-- li end -->
 
 	<!-- Elements Menu -->
-	<li class="has-dropdown mega-dropdown">
+	<!-- <li class="has-dropdown mega-dropdown">
 		<a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">elements</a>
 		<ul class="dropdown-menu mega-dropdown-menu">
 			<li>
 				<div class="container">
 					<div class="row">
-						<!-- Column #1 -->
+					
 						<div class="col-md-3">
 							<ul>
 								<li>
@@ -145,9 +145,7 @@
 								</li>
 							</ul>
 						</div>
-						<!-- .col-md-3 end -->
-						
-						<!-- Column #2 -->
+					
 						<div class="col-md-3">
 							<ul>
 								<li>
@@ -161,9 +159,7 @@
 								</li>
 							</ul>
 						</div>
-						<!-- .col-md-3 end -->
-						
-						<!-- Column #3 -->
+					
 						<div class="col-md-3">
 							<ul>
 				                <li>
@@ -179,9 +175,7 @@
 
 							</ul>
 						</div>
-						<!-- .col-md-3 end -->
-						
-						<!-- Column #4 -->
+					
 						<div class="col-md-3">
 							<ul>
 								<li>
@@ -192,21 +186,21 @@
 								</li>
 							</ul>
 						</div>
-						<!-- .col-md-3 end -->
+					
 					</div>
-					<!-- .row end -->
+				
 				</div>
-				<!-- container end -->
+			
 			</li>
 		</ul>
-		<!-- .mega-dropdown-menu end -->
-	</li>				</ul>
+	
+	</li>				</ul> -->
 				<div class="module-container">
 				<!-- Module Consultation  -->
 <div class="module module-consultation pull-left">
-	<a class="btn" href="page-contact.html">Consultation</a>
+	<a class="btn" href="page-contact.html">Get Call</a>
 </div>				<!-- Module Search -->
-<div class="module module-search pull-left">
+<!-- <div class="module module-search pull-left">
 	<div class="module-icon search-icon">
 		<i class="lnr lnr-magnifier"></i>
 		<span class="title">search</span>
@@ -218,14 +212,15 @@
 				<div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
 					<form class="form-search">
 						<input type="text" class="form-control" placeholder="Search...">
-					</form><!-- .form-search end -->
-				</div><!-- .col-md-8 end -->
-			</div><!-- .row end -->
-		</div><!-- .container end -->
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 		<a class="module-cancel" href="#"><i class="fa fa-close"></i></a>
 	</div>
-</div><!-- .module-search end -->				<!-- Module Cart -->
+</div> -->
+<!-- .module-search end -->				<!-- Module Cart -->
 <div class="module module-cart pull-left">
 	<div class="module-icon cart-icon">
 		<i class="lnr lnr-cart"></i>
