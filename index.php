@@ -13,7 +13,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Consulting Business Consulting Finance Html5 Template">
 <link href="assets/images/favicon/favicon.png" rel="icon">
-
+echo "hi";
 <!-- Fonts
     ============================================= -->
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800%7CRoboto:300i,400,400i,500,500i,700" rel="stylesheet" type="text/css">
