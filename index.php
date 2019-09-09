@@ -12,7 +12,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 <meta name="author" content="zytheme"/>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="Consulting Business Consulting Finance Html5 Template">
+<meta name="description" content="Metriken Integrated Business Pvt Ltd - 360 Degree Sales and Strategy firm.">
 <link href="assets/images/favicon/favicon.png" rel="icon">
 <!-- Fonts
     ============================================= -->
@@ -36,7 +36,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 
 <!-- Document Title
     ============================================= -->
-<title>Consultivo | Consulting Business Consulting Finance Html5 Template</title>
+<title>Metriken Integrated Business Pvt Ltd | 360 Degree Sales and Strategy firm.</title>
 <style>
 .list-group li{
 text-align:left !important;
@@ -58,6 +58,82 @@ text-align:left !important;
 	<div class="rev_slider_wrapper">
 		<div id="slider1" class="rev_slider"  data-version="5.0">
 			<ul>
+			
+							<!-- slide 2 -->
+				<li data-transition="zoomin" 
+					data-slotamount="default" 
+					data-easein="Power4.easeInOut" 
+					data-easeout="Power4.easeInOut" 
+					data-masterspeed="2000">
+					<!-- MAIN IMAGE -->
+					<img src="assets/images/sliders/slide-bg/2.jpg" alt="Slide Background Image"  width="1920" height="1280">
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption" 
+				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-110','-100','-110','-110']" 
+                        data-fontsize="['16','16','16','12']"
+                        data-lineheight="['25','25','25','25']"
+						data-whitespace="nowrap"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":750,"speed":750,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none" 
+						data-splitout="none" 
+						data-responsive_offset="on">
+ 						<!-- <div class="slide--subheadline">Instant, Secure & Private</div> -->
+ 					</div>
+					
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption" 
+				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['-13','-13','-13','10']"
+						data-fontsize="['60', '50', '40', '30']" 
+                        data-lineheight="['60','60','60','60']"
+						data-width="none"
+						data-height="none"
+						data-transform_idle="o:1;"
+                        data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+ 						data-splitin="none" 
+						data-splitout="none" 
+ 						data-responsive_offset="on">
+ 						<div class="slide--headline">Sales, Branding and Market Research <br>Strategy & Consulting Firm</div>
+                         
+  					</div>		
+ 								
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption" 
+				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['100','100','100','100']"
+						data-fontsize="['16', '16', '16', '12']" 
+                        data-lineheight="['60','60','60','60']"
+						data-width="none"
+						data-height="none"
+                        data-frames='[{"delay":1250,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						data-splitin="none" 
+						data-splitout="none" 
+						data-responsive_offset="on">
+ 						<div class="slide--bio">Professionally managed tech driven, affordable, next-gen investigative team offering integrated <br>business solutions and excellent customer service to domestic and global clients</div>
+ 					</div>
+					
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption" 
+					data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
+                        data-y="['middle','middle','middle','middle']" data-voffset="['176','176','200','210']"
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+                        data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"x:50px;opacity:0;","ease":"Power3.easeInOut"}]'
+						data-splitin="none" 
+						data-splitout="none" 
+						data-responsive_offset="on" 
+						>
+						<div class="slide-action">
+							<a class="btn btn--primary btn--bordered btn--rounded" href="#">Get Call</a>
+ 						</div>
+					</div>
+				</li>
+				
+				
 				<!-- slide 1 -->
 				<li data-transition="zoomout" 
 					data-slotamount="default" 
@@ -131,79 +207,7 @@ text-align:left !important;
 					</div>
 				</li>
 				
-				<!-- slide 2 -->
-				<li data-transition="zoomin" 
-					data-slotamount="default" 
-					data-easein="Power4.easeInOut" 
-					data-easeout="Power4.easeInOut" 
-					data-masterspeed="2000">
-					<!-- MAIN IMAGE -->
-					<img src="assets/images/sliders/slide-bg/2.jpg" alt="Slide Background Image"  width="1920" height="1280">
-					<!-- LAYER NR. 1 -->
-					<div class="tp-caption" 
-				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
-                        data-y="['middle','middle','middle','middle']" data-voffset="['-110','-100','-110','-110']" 
-                        data-fontsize="['16','16','16','12']"
-                        data-lineheight="['25','25','25','25']"
-						data-whitespace="nowrap"
-						data-width="none"
-						data-height="none"
-                        data-frames='[{"delay":750,"speed":750,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-						data-splitin="none" 
-						data-splitout="none" 
-						data-responsive_offset="on">
- 						<!-- <div class="slide--subheadline">Instant, Secure & Private</div> -->
- 					</div>
-					
-					<!-- LAYER NR. 2 -->
-					<div class="tp-caption" 
-				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
-                        data-y="['middle','middle','middle','middle']" data-voffset="['-13','-13','-13','10']"
-						data-fontsize="['60', '50', '40', '30']" 
-                        data-lineheight="['60','60','60','60']"
-						data-width="none"
-						data-height="none"
-						data-transform_idle="o:1;"
-                        data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
- 						data-splitin="none" 
-						data-splitout="none" 
- 						data-responsive_offset="on">
- 						<div class="slide--headline">Sales,Branding ,and Market Research <br>Strategy & Consulting Firm</div>
-                         
-  					</div>		
- 								
-					<!-- LAYER NR. 3 -->
-					<div class="tp-caption" 
-				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
-                        data-y="['middle','middle','middle','middle']" data-voffset="['100','100','100','100']"
-						data-fontsize="['16', '16', '16', '12']" 
-                        data-lineheight="['60','60','60','60']"
-						data-width="none"
-						data-height="none"
-                        data-frames='[{"delay":1250,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-						data-splitin="none" 
-						data-splitout="none" 
-						data-responsive_offset="on">
- 						<div class="slide--bio">Professionally managed tech driven, affordable, next-gen investigative team offering integrated <br>business solutions and excellent customer service to domestic and global clients</div>
- 					</div>
-					
-					<!-- LAYER NR. 4 -->
-					<div class="tp-caption" 
-					data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
-                        data-y="['middle','middle','middle','middle']" data-voffset="['176','176','200','210']"
-						data-width="none"
-						data-height="none"
-						data-whitespace="nowrap"
-                        data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"x:50px;opacity:0;","ease":"Power3.easeInOut"}]'
-						data-splitin="none" 
-						data-splitout="none" 
-						data-responsive_offset="on" 
-						>
-						<div class="slide-action">
-							<a class="btn btn--primary btn--bordered btn--rounded" href="#">Get Call</a>
- 						</div>
-					</div>
-				</li>
+
 				
 				<!-- slide 3 -->
 				<li data-transition="slideoverleft"

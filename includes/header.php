@@ -1,4 +1,8 @@
-<header id="navbar-spy" class="header header-1 header-transparent">
+<?php 
+$root = $_SERVER['DOCUMENT_ROOT'];
+
+?>
+	<header id="navbar-spy" class="header header-1 header-transparent">
 	<nav id="primary-menu" class="navbar navbar-expand-lg navbar-light navbar-bordered navbar-static-top" >
 		<div class="container">
 			<a class="navbar-brand" href="index-2.html">
@@ -14,8 +18,9 @@
 				<ul class="navbar-nav ml-auto">
 				<!-- Home Menu-->
 <li class="has-dropdown active">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">Home</a>
-    <!-- <ul class="dropdown-menu">
+  <a href="<?php $root;?>/index.php"  class="dropdown-toggle menu-item" >Home</a>
+   <!--  <a href="../about.php" data-toggle="dropdown" class="dropdown-toggle menu-item">Home</a>
+    <ul class="dropdown-menu">
         <li>
             <a href="home-consulting.html">Home Consulting</a>
         </li>
@@ -34,7 +39,7 @@
 
 <!-- Pages Menu -->
 <li class="has-dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item" data-hover="pages">About</a>
+    <a href="<?php $root;?>/about.php"   class="dropdown-toggle menu-item">About Us</a>
     <!-- <ul class="dropdown-menu">
         <li>
             <a href="page-about.html">About US</a>
@@ -62,20 +67,20 @@
     <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">services</a>
     <ul class="dropdown-menu">
         <li>
-            <a href="page-services.html">services grid</a>
+            <a href="<?php $root;?>/services-grid.php">services grid</a>
         </li>
         <li>
-            <a href="page-services-single.html">services single</a>
+            <a href="<?php $root;?>/services-single.php">services single</a>
         </li>
         <li>
-            <a href="page-pricing.html">pricing</a>
+            <a href="<?php $root;?>/pricing.php">pricing</a>
         </li>
     </ul>
 </li>
 <!-- li end -->
 <!-- Studies Menu-->
 <li class="has-dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-item">Contact Us</a>
+    <a href="<?php $root;?>/contact-us.php"  class="dropdown-toggle menu-item">Contact Us</a>
     <!-- <ul class="dropdown-menu">
         <li>
             <a href="case-studies-grid.html">case grid</a>

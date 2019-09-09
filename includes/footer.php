@@ -1,4 +1,7 @@
-<!-- Footer #1
+<?php 
+$root = $_SERVER['DOCUMENT_ROOT'];
+
+?><!-- Footer #1
 ============================================= -->
 <footer id="footer" class="footer footer-1">
 	<!-- Widget Section
@@ -8,8 +11,7 @@
 			<div class="row clearfix">
 				<div class="col-12 col-md-6 col-lg-3 footer--widget widget-about">
 					<div class="widget-content">
-						<img class="footer-logo" src="assets/images/logo/logo-small.png" alt="logo">
-						<p>Experienced In Mortgage And Financial Advice!We don’t believe in the sales culture, but instead we believe in the service culture. </p>
+						<img class="logo logo-light" src="<?php $root;?>/assets/images/logo/Metriken.png" alt="Consultivo Logo" height="90vh";width="690vw;">						<p>Experienced In Mortgage And Financial Advice!We don’t believe in the sales culture, but instead we believe in the service culture. </p>
 						<div class="social-icons">
 							<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
 							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -80,7 +82,7 @@
  			<div class="row">
                 <div class="col-12 col-md-12 col-md-12 text--center footer--copyright">
 					<div class="copyright">
-						<span>© 2018, With Love by</span> <a href="http://themeforest.net/user/7oroof/portfolio?ref=zytheme">7oroof.com</a>
+						<span>© 2019, With Love by</span> <a href="#">metrikensolutions.com</a>
 					</div>
                 </div>
  			</div>

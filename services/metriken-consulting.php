@@ -1,3 +1,8 @@
+
+<?php
+$root = $_SERVER['DOCUMENT_ROOT'];
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -17,8 +22,9 @@
 
 <!-- Stylesheets
     ============================================= -->
-<link href="assets/css/external.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+
+<link href="<?php $root;?>/assets/css/external.css" rel="stylesheet">
+<link href="<?php $root;?>/assets/css/style.css" rel="stylesheet">
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 <!--[if lt IE 9]>

@@ -85,6 +85,8 @@ To make it easy to update your theme, you should not edit the styles in this fil
 the custom.css file to add your styles. You can copy a style from this file and paste it in 
 custom.css and it will override the style in this file. You have been warned! :)
 */
+
+
 body,
 html {
 	overflow-x: hidden;
@@ -1701,7 +1703,7 @@ blockquot {
 	line-height: 68px;
 }
 
-.btn--gradient {
+.btn--gradient { 
 	line-height: 55px;
 	background: -moz-linear-gradient(180deg, #98cb2b 0%, #9dd031 64%, #a2d536 100%);
 	background: -webkit-linear-gradient(180deg, #98cb2b 0%, #9dd031 64%, #a2d536 100%);
