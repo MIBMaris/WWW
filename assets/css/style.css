@@ -85,8 +85,39 @@ To make it easy to update your theme, you should not edit the styles in this fil
 the custom.css file to add your styles. You can copy a style from this file and paste it in 
 custom.css and it will override the style in this file. You have been warned! :)
 */
+/*
+Color Code
+
+#ff8200; Orange
+#97999b; Gray 2 60%
+#646668; Gray 1 40%
+*/
+
+/* Own Style*/
+
+.list-group li{
+text-align:left !important;
+border:0px !important;
+
+}
+.icon-puzzle ,.icon-layers, .icon-flag {
+						color:#ff8200 !important;
+					}
+					
+.custom-bullet li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+     content: "›";
+    font-family: 'Glyphicons Halflings';
+    font-size: 20px;
+    float: left;
+    margin-top: -8px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}
 
 
+/* End */
 body,
 html {
 	overflow-x: hidden;
@@ -106,6 +137,10 @@ body {
 	margin: 0;
 }
 
+.feature-card-desc, .info-card-desc{
+
+text-align: justify;
+}
 .wrapper {
 	background-color: #ffffff;
 }
@@ -132,21 +167,24 @@ a {
 }
 
 a:hover {
-	color: #d66f00;
+	color: #82ae26;
 	text-decoration: none;
 }
 
 a:focus {
-	color: #d66f00;
+	color: #82ae26;
 	outline: none;
 	text-decoration: none;
 }
 
 a:active {
-	color: #d66f00;
+	color: #82ae26;
 	outline: none;
 	text-decoration: none;
 }
+
+
+
 
 textarea {
 	resize: none;
@@ -1250,6 +1288,7 @@ blockquot {
 	background-position: center center;
 	width: 100%;
 	height: 100%;
+	
 }
 
 .bg-parallax {
@@ -1705,10 +1744,10 @@ blockquot {
 
 .btn--gradient { 
 	line-height: 55px;
-	background: -moz-linear-gradient(180deg, #98cb2b 0%, #9dd031 64%, #a2d536 100%);
-	background: -webkit-linear-gradient(180deg, #98cb2b 0%, #9dd031 64%, #a2d536 100%);
-	background: -ms-linear-gradient(180deg, #98cb2b 0%, #9dd031 64%, #a2d536 100%);
-	background: linear-gradient(180deg, #98cb2b 0%, #9dd031 64%, #a2d536 100%);
+	background: -moz-linear-gradient(180deg, #ff8200 0%, #ff8200 64%, #ff890a 100%);
+	background: -webkit-linear-gradient(180deg, #ff8200 0%, #ff8200 64%, #ff890a 100%);
+	background: -ms-linear-gradient(180deg, #ff8200 0%, #ff8200 64%, #ff890a 100%);
+	background: linear-gradient(180deg, #ff8200 0%, #ff8200 64%, #ff890a 100%);
 	color: #ffffff;
 	border: none;
 }
@@ -2710,7 +2749,7 @@ table tbody tr td {
 .heading .heading--subtitle {
 	font-family: 'Roboto', sans-serif;
 	color: #ff8200;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 700;
 	line-height: 1;
 	margin-bottom: 7px;
@@ -2718,7 +2757,7 @@ table tbody tr td {
 
 .heading .heading--title {
 	font-family: 'Montserrat';
-	font-size: 36px;
+	font-size: 24px; /* 36px */
 	font-weight: 600;
 	line-height: 45px;
 	margin-bottom: 17px;
@@ -2780,8 +2819,8 @@ table tbody tr td {
 	bottom: 15px;
 	content: "";
 	border: 4px solid transparent;
-	border-top-color: #d66f00;
-	border-left-color: #d66f00;
+	border-top-color: #82ae26;
+	border-left-color: #82ae26;
 	border-radius: 50%;
 	-webkit-animation: spinBack 1s linear infinite;
 	animation: spinBack 1s linear infinite;
@@ -3086,7 +3125,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 }
 
 .header-full .module-consultation .btn:hover {
-	background: #d66f00;
+	background: #82ae26;
 }
 
 .header-full .module .module-label {
@@ -3267,7 +3306,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
 }
 
 .navbar-nav > li.has-dropdown > ul.dropdown-menu {
-	width: 190px;
+	width: 260px;
 	min-width: 190px;
 	padding: 13px 0;
 	background-color: #1b1a1a;
@@ -5006,7 +5045,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 .gallery-item .gallery--hover .gallery--action {
 	width: 100%;
 	height: 100%;
-	background-color: rgb(255, 137, 10);
+	background-color: rgba(160, 211, 52, 0.9);
 	background-image: linear-gradient(to bottom, rgba(152, 203, 43, 0) 0%, rgba(152, 203, 43, 0) 26%, rgba(152, 203, 43, 0.9) 88%);
 	text-align: center;
 	-webkit-transition: all 0.35s;
@@ -5443,7 +5482,8 @@ a.gallery-more i {
 	box-shadow: 0 10px 20px rgba(224, 224, 224, 0.4);
 	border-radius: 2px;
 	background-color: #ffffff;
-	padding: 50px 64px;
+	padding: 40px 60px;
+	/*50px 64px; */
 	margin-bottom: 30px;
 }
 
@@ -5499,12 +5539,12 @@ a.gallery-more i {
 }
 
 .pricing-active .pricing-panel .pricing--heading {
-	background-image: -moz-linear-gradient(to top, #a2d536 0%, #98cb2b 100%);
-	background-image: -webkit-linear-gradient(to top, #a2d536 0%, #98cb2b 100%);
-	background-image: -ms-linear-gradient(to top, #a2d536 0%, #98cb2b 100%);
-	background-image: linear-gradient(to top, #a2d536 0%, #98cb2b 100%);
+	background-image: -moz-linear-gradient(to top, #f2f2f2 0%, #ff8200 100%);
+	background-image: -webkit-linear-gradient(to top, #f2f2f2 0%, #ff8200 100%);
+	background-image: -ms-linear-gradient(to top, #f2f2f2 0%, #ff8200 100%);
+	background-image: linear-gradient(to top, #f2f2f2 0%, #ff8200 100%);
 	margin-top: -40px;
-	padding-top: 90px;
+	padding-top: 45px;
 }
 
 .pricing-active .pricing-panel .pricing--heading p,
@@ -7399,9 +7439,18 @@ a.link--styled:hover {
 
 .widget-categories li.active a,
 .widget-categories li a:hover {
-	background-color: #ff8200;
+	background-color: #97999b;
 	color: #ffffff;
 }
+
+
+.widget-categories li.head a,
+.widget-categories li.head a:hover {
+	background-color: #ff901a;
+	color: #ffffff;
+}
+
+
 
 .widget-categories li a:before {
 	position: absolute;
@@ -9013,9 +9062,9 @@ footer .widget-newsletter form {
 
 .video-2 .heading .heading--title,
 .video-3 .heading .heading--title {
-	font-size: 45px;
+	font-size: 22px; /*45px */
 	font-weight: 600;
-	line-height: 57px;
+	line-height: 45px;
 	margin-bottom: 17px;
 }
 
@@ -9055,8 +9104,8 @@ footer .widget-newsletter form {
 
 .video-2 .heading .heading--title,
  .video-3 .heading .heading--title {
-	font-size: 30px;
-	line-height: 40px;
+	font-size: 18px; /*30px */
+	line-height: 30px;
 	padding: 0 10px;
 }
 
@@ -10482,6 +10531,7 @@ footer .widget-newsletter form {
 	font-size: 16px;
 	line-height: 26px;
 	margin-bottom: 23px;
+	text-align:justify;
 }
 
 .services-single .services--text p:last-child {
@@ -11305,7 +11355,9 @@ footer .widget-newsletter form {
 }
 
 .page-title .breadcrumb .active {
-	color: #f9f9f9;
+	color: #ff8200;
+	font-weight:bold;
+	
 }
 
 .page-title .breadcrumb a:hover {

@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
         sliderType: "standard",
         jsFileLocation: "../assets/revolution/js/",
         sliderLayout: "fullscreen",
-        delay: 99000,/* sets the Slider's default timeline */
+        delay: 5000,/* sets the Slider's default timeline 99000*/
         disableProgressBar: "on",
         spinner: "spinner0",/* PRELOADER OPTION "0" */ 
         /* basic navigation arrows and bullets */

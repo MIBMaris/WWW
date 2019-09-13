@@ -20,7 +20,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 
 <!-- Stylesheets
     ============================================= -->
-<link href="assets/css/external.css" rel="stylesheet">
+<link href="<?php $root;?>/assets/css/external.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 
 <!-- RS5.0 Main Stylesheet -->
@@ -33,17 +33,26 @@ $root = $_SERVER['DOCUMENT_ROOT'];
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+<style>
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
+.fa-building, .fa-road, .fa-keyboard-o{
+	color:#b3b3b3 !important;
+}
 
+</style>
 <!-- Document Title
     ============================================= -->
 <title>Metriken Integrated Business Pvt Ltd | 360 Degree Sales and Strategy firm.</title>
-<style>
-.list-group li{
-text-align:left !important;
 
-}
-    </style>
-</head>
+	
 <body>
 <div class="preloader">
 	<div class="reverse-spinner"></div>
@@ -58,16 +67,19 @@ text-align:left !important;
 	<div class="rev_slider_wrapper">
 		<div id="slider1" class="rev_slider"  data-version="5.0">
 			<ul>
-			
-							<!-- slide 2 -->
+			  
+			  <!-- slide 2 -->
 				<li data-transition="zoomin" 
 					data-slotamount="default" 
 					data-easein="Power4.easeInOut" 
 					data-easeout="Power4.easeInOut" 
 					data-masterspeed="2000">
 					<!-- MAIN IMAGE -->
-					<img src="assets/images/sliders/slide-bg/2.jpg" alt="Slide Background Image"  width="1920" height="1280">
-					<!-- LAYER NR. 1 -->
+					<img src="https://s3us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg" alt="Slide Background Image"  width="1920" height="1280"> 
+                     <div id="large-header" class="large-header"><canvas id="demo-canvas"></canvas></div>
+           
+         
+				  <!-- LAYER NR. 1 -->
 					<div class="tp-caption" 
 				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
                         data-y="['middle','middle','middle','middle']" data-voffset="['-110','-100','-110','-110']" 
@@ -80,7 +92,11 @@ text-align:left !important;
 						data-splitin="none" 
 						data-splitout="none" 
 						data-responsive_offset="on">
- 						<!-- <div class="slide--subheadline">Instant, Secure & Private</div> -->
+ 						<!--<div class="slide--subheadline"></div> -->
+                        <div id="large-header" >
+         <canvas id="demo-canvas"></canvas>
+       
+   </div>
  					</div>
 					
 					<!-- LAYER NR. 2 -->
@@ -96,7 +112,7 @@ text-align:left !important;
  						data-splitin="none" 
 						data-splitout="none" 
  						data-responsive_offset="on">
- 						<div class="slide--headline">Sales, Branding and Market Research <br>Strategy & Consulting Firm</div>
+ 						<div class="slide--headline">Sales, Branding,  Strategy, Consulting,  <br> and</span> Market Research Firm</div>
                          
   					</div>		
  								
@@ -112,7 +128,7 @@ text-align:left !important;
 						data-splitin="none" 
 						data-splitout="none" 
 						data-responsive_offset="on">
- 						<div class="slide--bio">Professionally managed tech driven, affordable, next-gen investigative team offering integrated <br>business solutions and excellent customer service to domestic and global clients</div>
+ 						<div class="slide--bio">Professionally managed tech driven, affordable, next-gen investigative team offering integrated business solutions <br>and excellent customer service to domestic and global clients</div>
  					</div>
 					
 					<!-- LAYER NR. 4 -->
@@ -128,10 +144,12 @@ text-align:left !important;
 						data-responsive_offset="on" 
 						>
 						<div class="slide-action">
-							<a class="btn btn--primary btn--bordered btn--rounded" href="#">Get Call</a>
+							<a class="btn btn--gradient btn--rounded mr-30" href="#">Our Services</a>
+							<a class="btn btn--video popup-video" href="https://www.youtube.com/watch?v=ygz-mNBIB14"><i class="fa fa-play"></i>Watch Video</a>
  						</div>
 					</div>
-				</li>
+                    
+			  </li>
 				
 				
 				<!-- slide 1 -->
@@ -141,8 +159,9 @@ text-align:left !important;
 					data-easeout="Power4.easeInOut" 
 					data-masterspeed="2000">
 					<!-- MAIN IMAGE -->
-					<img src="assets/images/sliders/slide-bg/1.jpg" alt="Slide Background Image"  width="1920" height="1280">
+					<img src="assets/images/sliders/slide-bg/slide-2.jpg" alt="Slide Background Image"  width="1920" height="1280">
 					<!-- LAYER NR. 1 -->
+                     <div id="large-header" class="large-header"><canvas id="demo-canvas"></canvas></div>
 					<div class="tp-caption" 
 				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
                         data-y="['middle','middle','middle','middle']" data-voffset="['-110','-100','-110','-110']" 
@@ -155,7 +174,7 @@ text-align:left !important;
  						data-splitin="none" 
 						data-splitout="none" 
 						data-responsive_offset="on">
- 						<div class="slide--subheadline">Free and impartial money advice</div>
+ 						<div class="slide--subheadline"> </div>
  					</div>
 					
 					<!-- LAYER NR. 2 -->
@@ -170,7 +189,7 @@ text-align:left !important;
  						data-splitin="none" 
 						data-splitout="none" 
   						data-responsive_offset="on">
- 						<div class="slide--headline">Experienced In Mortgage <br> And Financial Advice!</div>
+ 						<div class="slide--headline">Data Driven Research to Make <br/>Informed Decisions</div>
  					</div>		
  								
 					<!-- LAYER NR. 3 -->
@@ -185,7 +204,8 @@ text-align:left !important;
  						data-splitin="none" 
 						data-splitout="none" 
 						data-responsive_offset="on">
- 						<div class="slide--bio">The market is incredibly competitive and hard to understand what exactly is on offer.</div>
+ 						<div class="slide--bio">Intelligent approaches to improve customer engagement, understand consumer behavior, and make
+better business resolution</div>
  					</div>
 					
 					<!-- LAYER NR. 4 -->
@@ -202,7 +222,7 @@ text-align:left !important;
 						>
 						<div class="slide-action">
 							<a class="btn btn--gradient btn--rounded mr-30" href="#">Our Services</a>
-							<a class="btn btn--video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4"><i class="fa fa-play"></i>Watch Video</a>
+							<a class="btn btn--video popup-video" href="https://www.youtube.com/watch?v=ygz-mNBIB14"><i class="fa fa-play"></i>Watch Video</a>
 						</div>
 					</div>
 				</li>
@@ -216,7 +236,7 @@ text-align:left !important;
 					data-easeout="Power4.easeInOut" 
 					data-masterspeed="2000">
  					<!-- MAIN IMAGE -->
-					<img src="assets/images/sliders/slide-bg/3.jpg" alt="Slide Background Image"  width="1920" height="1280">
+					<img src="assets/images/sliders/slide-bg/slide-3.jpg" alt="Slide Background Image"  width="1920" height="1280">
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption" 
 				        data-x="['left','left','left','left']" data-hoffset="['70','50','50','20']" 
@@ -229,7 +249,7 @@ text-align:left !important;
                         data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"x:50px;opacity:0;","ease":"Power3.easeInOut"}]'						data-splitin="none" 
 						data-splitout="none" 
  						data-responsive_offset="on">
- 						<div class="slide--subheadline">Instant, Secure & Private</div>
+ 						<div class="slide--subheadline"></div>
  					</div>
 					
 					<!-- LAYER NR. 2 -->
@@ -245,7 +265,7 @@ text-align:left !important;
  						data-splitin="none" 
 						data-splitout="none" 
 						data-responsive_offset="on">
- 						<div class="slide--headline">We Are The Leaders Of <br>Financial Investment Market! </div>
+ 						<div class="slide--headline">Guided by Customer Intelligence <span style="text-transform:lowercase !important; ">and</span> <br/>Analytics </div>
   					</div>		
  								
 					<!-- LAYER NR. 3 -->
@@ -260,7 +280,8 @@ text-align:left !important;
 						data-splitin="none" 
 						data-splitout="none" 
 						data-responsive_offset="on">
- 						<div class="slide--bio">Buy And Sell Cryptocurrency Near You!</div>
+ 						<div class="slide--bio">Analyze and understand consumer data from multiple platforms in order to drive smarter marketing and
+business strategies!</div>
  					</div> 
 					
 					<!-- LAYER NR. 4 -->
@@ -276,7 +297,8 @@ text-align:left !important;
 						data-responsive_offset="on" 
 						>
 						<div class="slide-action">
-							<a class="btn btn--white btn--bordered btn--rounded" href="#">Get Started</a>
+							<a class="btn btn--gradient btn--rounded mr-30" href="#">Our Services</a>
+							<a class="btn btn--video popup-video" href="https://www.youtube.com/watch?v=ygz-mNBIB14"><i class="fa fa-play"></i>Watch Video</a>
  						</div>
 					</div>
 				</li>
@@ -299,7 +321,7 @@ text-align:left !important;
                     <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="feature-card">
                             <div class="feature-card-icon">
-                                <i class="icon-puzzle"></i>
+                                <i class="fa fa-road"></i>
                             </div>
                             <div class="feature-card-content">
                                 <h3 class="feature-card-title">MIB Way</h3>
@@ -309,27 +331,33 @@ We specialize in research, measurement, statistical modeling, and branding & com
  to improve your business performance.
  
                               </p>
+							  
+							  
+	
+
                             </div>
                         </div>
-
+					
                         <div class="feature-card">
                             <div class="feature-card-icon">
-                                <i class="icon-layers"></i>
+                                <i class="fa fa-building"></i>
                             </div>
                             <div class="feature-card-content">
                                 <h3 class="feature-card-title">Sectors We Work </h3>
                                 <!-- <p class="feature-card-desc"></p> -->
                                 <div class="row">
                                     <div class="col-sm-6">
-                                 <ul class="list-group">
-                                 <li class="list-group-item list-group-item-action" >
-                                 Retail – Jewellery, Automobile
+                                  <ul class="list-group custom-bullet" >
+                              
+                                 <li class="list-group-item list-group-item-action">
+                                  Retail
+                                 </li>
+                                 
+                                   <li class="list-group-item list-group-item-action">
+                                  Automobile
                                  </li>
                                  <li class="list-group-item list-group-item-action">
-                                 Start-Ups
-                                 </li>
-                                 <li class="list-group-item list-group-item-action">
-                                 SMB
+                                  Start-Ups & SMB's
                                  </li>
                                  <li class="list-group-item list-group-item-action">
                                  Finance
@@ -339,16 +367,23 @@ We specialize in research, measurement, statistical modeling, and branding & com
                                  </li>
 </ul>
 </div>
+
+
 <div class="col-sm-6">
-    <ul class="list-group">
+    <ul class="list-group custom-bullet" >
                                  <li class="list-group-item list-group-item-action">
-                                 Travel
+                                 
+ Travel
+                                 </li>
+                                 
+                                  <li class="list-group-item list-group-item-action">
+                                  FMCG
                                  </li>
                                  <li class="list-group-item list-group-item-action">
                                  Education
                                  </li>
                                  <li class="list-group-item list-group-item-action" >
-                                 Manufacturing
+                                  Manufacturing
                                  </li>
                                  <li class="list-group-item list-group-item-action">
                                  Healthcare
@@ -364,7 +399,7 @@ We specialize in research, measurement, statistical modeling, and branding & com
                     <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="feature-card">
                             <div class="feature-card-icon">
-                                <i class="icon-flag"></i>
+                               <i class="fa fa-keyboard-o"></i>
                             </div>
                             <div class="feature-card-content">
                                 <h3 class="feature-card-title">What We Do ?</h3>
@@ -376,13 +411,13 @@ We specialize in research, measurement, statistical modeling, and branding & com
                          and branding & communication studies offering comprehensive solutions to improve your business performance.
 
                               </p>
-                              <ul class="list-group">
-                              <li class="list-group-item list-group-item-action">	We package your product or service
+                              <ul class="list-group custom-bullet">
+                              <li class="list-group-item list-group-item-action"> 	We package your product or service
                               </li>
-                              <li class="list-group-item list-group-item-action">Take all measures to market your products / services</li>
-                              <li class="list-group-item list-group-item-action">Identify the right place to sell or advertise your product / service</li>
-                              <li class="list-group-item list-group-item-action">Advise different mediums to help you reach your target audience</li>
-                              <li class="list-group-item list-group-item-action">Present to you the expected conversion ration based on research</li>
+                              <li class="list-group-item list-group-item-action"> Take all measures to market your products / services</li>
+                              <li class="list-group-item list-group-item-action"> Identify the right place to sell or advertise your product / service</li>
+                              <li class="list-group-item list-group-item-action"> Advise different mediums to help you reach your target audience</li>
+                              <li class="list-group-item list-group-item-action"> Present to you the expected conversion ration based on research</li>
 </ul>
 <br/>
 <p class="feature-card-desc">
@@ -398,103 +433,20 @@ We specialize in research, measurement, statistical modeling, and branding & com
                     <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
       
                     </div>
-                    <!-- .col-md-6 end -->
-                    <!-- Feature Card #4 -->
-
-                    <!-- <div class="col-sm-12 col-md-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="feature-card">
-                            <div class="feature-card-icon">
-                                <i class="icon-clipboard"></i>
-                            </div>
-                            <div class="feature-card-content">
-                                <h3 class="feature-card-title">Detailed Reports</h3>
-                                <p class="feature-card-desc">Our experts are always available over the phone and online. Web chat is available from 8am to 8pm or you can give us a call for free.</p>
-                            </div>
-                        </div>
-                    </div> -->
+      
 
                     <!-- .col-md-6 end -->
                 </div>
                 <!-- .row end -->
             </div>
-            <!-- .col-lg-8 end -->
-            <!-- <div class="col-sm-12 col-md-12 col-lg-4">
-                <div class="contact-box">
-                    <div class="contat-heading">
-                        <h3>Get a Free Quote</h3>
-                    </div>
-                    <form class="mb-0">
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" name="contact-name" id="contact-name" placeholder="Name" required="">
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <div class="col">
-                                <input type="email" class="form-control" name="contact-email" id="contact-email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <textarea class="form-control" name="contact-message" id="contact-message" rows="2" placeholder="Request"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <input type="submit" value="Submit Request" name="submit" class="btn btn--secondary btn--block">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12">
-                                <div class="contact-result"></div>
-                            </div>
-                        </div>
-                    </form>
-                   ->
-                </div>
-            </div> -->
+           
             
             <!-- .col-lg-4 end -->
         </div>
         <!-- .row end -->
     </div>
     <!-- .container end -->
-    <div class="container">
-        <div class="clients clients-1 pt-30 pb-0 row">
-            <!-- Client #1 -->
-            <div class="col-6 col-sm-6 col-md-4 col-lg-2 client">
-                <img src="assets/images/clients/1.png" alt="client">
-            </div>
-            <!-- .client end -->
-            <!-- Client #2 -->
-            <div class="col-6 col-sm-6 col-md-4 col-lg-2 client">
-                <img src="assets/images/clients/2.png" alt="client">
-            </div>
-            <!-- .client end -->
-            <!-- Client #3 -->
-            <div class="col-6 col-sm-6 col-md-4 col-lg-2 client">
-                <img src="assets/images/clients/3.png" alt="client">
-            </div>
-            <!-- .client end -->
-            <!-- Client #4 -->
-            <div class="col-6 col-sm-6 col-md-4 col-lg-2 client">
-                <img src="assets/images/clients/4.png" alt="client">
-            </div>
-            <!-- .client end -->
-            <!-- Client #5 -->
-            <div class="col-6 col-sm-6 col-md-4 col-lg-2 client">
-                <img src="assets/images/clients/5.png" alt="client">
-            </div>
-            <!-- .client end -->
-            <!-- Client #6 -->
-            <div class="col-6 col-sm-6 col-md-4 col-lg-2 client">
-                <img src="assets/images/clients/6.png" alt="client">
-            </div>
-            <!-- .client end -->
-        </div>
-        <!-- .row-clients end -->
-    </div>
+
 </section>
 <!-- #featured4 end -->
 
@@ -550,7 +502,10 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="info-card">
-                    <div class="info-card-step">01.</div>
+                    <div class="info-card-step">     
+                                <i class="fa fa-pie-chart" aria-hidden="true"></i>
+
+                            </div>
                     <div class="info-card-content">
                         <h4 class="info-card-subtitle">We offer </h4>
                         <h3 class="info-card-title">Customized Solutions</h3>
@@ -564,7 +519,9 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
             <!-- .col-lg-4 end -->
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="info-card">
-                    <div class="info-card-step">02.</div>
+                <div class="info-card-step">   
+                 <i class="fa fa-line-chart" aria-hidden="true"></i>
+				</div>
                     <div class="info-card-content">
                         <h4 class="info-card-subtitle">We focus on</h4>
                         <h3 class="info-card-title">7 P’s of the marketing mix </h3>
@@ -578,7 +535,7 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
             <!-- .col-lg-4 end -->
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="info-card">
-                    <div class="info-card-step">03.</div>
+                   <div class="info-card-step"><i class="fa fa-share-square-o"></i></div>
                     <div class="info-card-content">
                         <h4 class="info-card-subtitle">We help</h4>
                         <h3 class="info-card-title">Establish Brand Presence</h3>
@@ -601,17 +558,17 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
 
 <!-- Featured #1
 ============================================= -->
-<section id="featured1" class="featured featured-1 text-center pt-110">
+<section id="services" class="featured featured-1 text-center pt-110">
     <div class="container">
         <div class="row ">
-            <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="col-sm-12 col-md-12 col-lg-12 offset-lg-12">
                 <div class="heading  mb-50 text--center">
                     <p class="heading--subtitle">What We Do!</p>
                     <h2 class="heading--title">Our Services</h2>
                     <p class="heading--desc mb-0">At Metriken Integrated Business we maintain close working relationships with our clients.
                      Our project folio includes both private and public sector covering studies for small, medium, NGO and enterprise studies. 
                      We cater to ad-hoc studies too. Our clients concede that we can provide a head-start to any research project immediately 
-                     and in doing so <br> we maintain utmost confidentiality.</p>
+                     and in doing so we maintain utmost confidentiality.</p>
                 </div>
             </div>
             <!-- .col-lg-6 end -->
@@ -621,57 +578,65 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
             <!-- Feature Card #1 -->
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="feature-card">
+				
                     <div class="feature-card-icon">
-                        <i class="icon-presentation"></i>
+                    <a href="<?php $root;?>/services/sales-and-marketing.php">
+                        <i class="fa fa-users"></i></a>
                     </div>
                     <div class="feature-card-content">
-                        <h3 class="feature-card-title">Metriken Consulting</h3>
-                        <p class="feature-card-desc">Based on our experience and expertise we recommend branding and marketing strategy for your company, products, or services. We offer customized solutions relevant to solve your business challenges
+                        <a href="<?php $root;?>/services/sales-and-marketing.php">
+                        <h3 class="feature-card-title">Metriken Consulting</h3></a>
+                        <p class="feature-card-desc">Based on our experience and expertise we recommend branding and marketing strategy for your company, products, or services. We offer customized solutions relevant to solve your business challenges. <a href="<?php $root;?>/services/sales-and-marketing.php"><u>More</u></a>
                         </p>
-                        <ul class="list-group">
+                        <ul class="list-group custom-bullet">
                         <li class="list-group-item list-group-item-action">We suggest package your product or service</li>
                         <li class="list-group-item list-group-item-action">Advise relevant  measures to market your products / services</li>
                         <li class="list-group-item list-group-item-action">Identify the right place to sell or advertise your product / service</li>
                         <li class="list-group-item list-group-item-action">Advise different mediums to help you reach your target audience</li>
                         <li class="list-group-item list-group-item-action">Present to you the expected conversion ration based on research</li>
                         </ul>
+						
                     </div>
-                </div>
+					
+                </div>        
             </div>
             <!-- .col-lg-4 end -->
             <!-- Feature Card #2 -->
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="icon-search"></i>
-                    </div>
+                   <a href="#"> <div class="feature-card-icon">
+                        <i class="fa fa-file-video-o"></i>
+                    </div></a>
                     <div class="feature-card-content">
-                        <h3 class="feature-card-title">Metriken Digital</h3>
+                        <a href="#"><h3 class="feature-card-title">Metriken Digital</h3></a>
                         <p class="feature-card-desc">We offer customized and comprehensive marketing and sales solutions to SMB’s, Retail, Start-ups and financial institutes. 
-                        Our solutions are practical and can be successfully implemented. </p>
-                        <ul class="list-group">
+                        Our solutions are practical and can be successfully implemented. <a class="" href="#"><u>More</u></a></p>
+                        <ul class="list-group custom-bullet">
                         <li class="list-group-item list-group-item-action">We write marketing plans </li>
                         <li class="list-group-item list-group-item-action">Develop result driven strategies to obtain sales and marketing goals</li>
                         <li class="list-group-item list-group-item-action">Plan & Execute marketing campaign</li>
                         <li class="list-group-item list-group-item-action">Help coordinate marketing efforts and activities</li>
                         <li class="list-group-item list-group-item-action">Help you maximize return on every marketing effort</li>
+						
+						</li>
                         </ul>
                     </div>
+					
                 </div>
             </div>
             <!-- .col-lg-4 end -->
             <!-- Feature Card #3 -->
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="feature-card">
-                    <div class="feature-card-icon">
+                    <a href="#"><div class="feature-card-icon">
                         <i class="icon-piechart"></i>
-                    </div>
+                    </div></a>
                     <div class="feature-card-content">
-                        <h3 class="feature-card-title">Metriken Communications</h3>
+                       <a href="#"> <h3 class="feature-card-title">Metriken Communications</h3></a>
                         <p class="feature-card-desc">Our integrated marketing initiatives are aimed at gaining successful conversion and ROI.
                           Our process involves succinct communication about the brand, create awareness to the target audience, 
-                        engage and further connect with them to build long term brand loyalty.</p>
-                        <ul class="list-group">
+                        engage and further connect with them to build long term brand loyalty. <a class="" href="#"><u>More</u></a></p>
+                        <ul class="list-group custom-bullet">
                         <li class="list-group-item list-group-item-action">
                         We develop communication strategy that promotes your business information amongst influencer. 
                         </li>
@@ -689,21 +654,22 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
             <!-- Feature Card #4 -->
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="icon-map"></i>
-                    </div>
+               <a href="#"> <div class="feature-card-icon">
+                           <i class="fa fa-line-chart"></i>
+                    </div></a>
                     <div class="feature-card-content">
-                        <h3 class="feature-card-title">Metriken Analytics</h3>
+                        <a href="#"><h3 class="feature-card-title">Metriken Analytics</h3></a>
                         <p class="feature-card-desc">
 						With analytics you get a deeper understanding of your customers. With the help of tools MIB helps you analyze data for your business. Using the analytics insight you can reach the right customer.
-						 With easy to use interface and shareable reports we can help make your data work for you.
+						 With easy to use interface and shareable reports we can help make your data work for you. <a class="" href="#"><u>More</u></a>
 						</p>
-						<ul class="list-group">
+						<ul class="list-group custom-bullet">
 						<li class="list-group-item list-group-item-action">
-						You can optimize your market place
+						Measure, manage, and analyze marketing performance. Optimize your return on investment
 						</li>
 						<li class="list-group-item list-group-item-action">
-					    Get deeper insight on how users engage with your site
+					    Get deeper insight on how users engage with your site, gauze the success of your marketing programs,
+and get insights on how to implement it successfully
 						</li>
 						<li class="list-group-item list-group-item-action">
 						You can be a small, medium or enterprise business and still find a solution that fits your business need 
@@ -712,41 +678,10 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                     </div>
                 </div>
             </div>
-            <!-- .col-lg-4 end -->
-            <!-- Feature Card #5 -->
-            <!-- <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="icon-bargraph"></i>
-                    </div>
-                    <div class="feature-card-content">
-                        <h3 class="feature-card-title">Finance & Restructuring</h3>
-                        <p class="feature-card-desc">Support major currencies: USD, EUR, GBP, and various Cryptocurrencies. Funds exchanged between currencies at market rate.</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- .col-lg-4 end -->
-            <!-- Feature Card #6 -->
-            <!-- <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <i class="icon-shield"></i>
-                    </div>
-                    <div class="feature-card-content">
-                        <h3 class="feature-card-title">Insurance & Retirement</h3>
-                        <p class="feature-card-desc">The first thing to know about blockchain smart contracts is they're not contracts, smart, nor necessarily on a blockchain.</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- .col-lg-4 end -->
+            
         </div>
         <!-- .row end -->
-        <div class="row ">
-            <div class="col-sm-12 col-md-12 col-lg-12 text--center">
-                <a href="#" class="btn btn--gradient btn--rounded">Get Started</a>
-            </div>
-            <!-- .col-lg-12 end -->
-        </div>
+
         <!-- .row end -->
 
     </div>
@@ -754,268 +689,11 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
 </section>
 <!-- #featured1 end -->
 
-<!-- Pricing Table #1
-============================================= -->
-<section id="pricing1" class="pricing pricing-1 bg-overlay bg-overlay-dark2 pt-110 pb-0">
-    <div class="bg-section">
-        <img src="assets/images/background/2.jpg" alt="background">
-    </div>
-    <div class="container">
-        <div class="row clearfix">
-            <div class="col-sm-12 col-md-12 col-lg-6 offset-md-3">
-                <div class="heading heading-1 text--center mb-40">
-                    <p class="heading--subtitle">Get Started Now</p>
-                    <h2 class="heading--title text-white">Our Pricing Plans</h2>
-                    <p class="heading--desc heading--light mb-0">Get started now with us to earn every day and forever in your business. We accept Investment from all over the world.</p>
-                </div>
-            </div>
-            <!-- .col-md-8 end -->
-        </div>
-        <!-- .row end -->
-    </div>
-    <div class="container pt-40">
-        <div class="row">
-            <!-- Pricing Packge #1
-			============================================= -->
-            <div class="col-sm-12 col-md-4 col-lg-4 price-table">
-                <div class="pricing-panel">
-                    <!--  Pricing heading  -->
-                    <div class="pricing--heading text--center">
-                        <div class="pricing--icon">
-                            <i class="icon-global"></i>
-                        </div>
-                        <h4>Starter Plan</h4>
-                        <p><span class="currency">$</span>125</p>
-                        <div class="pricing--desc">
-                            Full Business analyzing, next generation accounting, and training sessions.
-                        </div>
-                        <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Get Started</a>
-                    </div>
-                    <!--  Pricing heading  -->
-                </div>
-            </div>
-            <!-- .pricing-table End -->
-            <!-- Pricing Packge #2
-			============================================= -->
-            <div class="col-sm-12 col-md-4 col-lg-4 price-table pricing-active">
-                <div class="pricing-panel">
-                    <!--  Pricing heading  -->
-                    <div class="pricing--heading text--center">
-                        <div class="pricing--icon">
-                            <i class="icon-global"></i>
-                        </div>
-                        <h4>Basic Plan</h4>
-                        <p><span class="currency">$</span>165</p>
-                        <div class="pricing--desc">
-                            Full Business analyzing, next generation accounting, and training sessions.
-                        </div>
-                        <a class="btn btn--white btn--bordered btn--rounded" href="#">Get Started</a>
-                    </div>
-                    <!--  Pricing heading  -->
-                </div>
-            </div>
-            <!-- .pricing-table End -->
-            <!-- Pricing Packge #3
-			============================================= -->
-            <div class="col-sm-12 col-md-4 col-lg-4 price-table">
-                <div class="pricing-panel">
-                    <!--  Pricing heading  -->
-                    <div class="pricing--heading text--center">
-                        <div class="pricing--icon">
-                            <i class="icon-global"></i>
-                        </div>
-                        <h4>Advanced Plan</h4>
-                        <p><span class="currency">$</span>195</p>
-                        <div class="pricing--desc">
-                            Full Business analyzing, next generation accounting, and training sessions.
-                        </div>
-                        <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Get Started</a>
-                    </div>
-                    <!--  Pricing heading  -->
-                </div>
-            </div>
-            <!-- .pricing-table End -->
-        </div>
-        <!-- .row end -->
-    </div>
-    <!-- .container end -->
-    <div class="section-divider"></div>
-</section>
-<!-- #pricing1 end -->
 
-<!-- Testimonial #1
-============================================= -->
-<section id="testimonial1" class="testimonial testimonial-1 pt-70 bg-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
-                <div id="testimonial-wide" class="carousel owl-carousel" data-slide="1" data-slide-rs="1" data-autoplay="true" data-nav="false" data-dots="false" data-space="0" data-loop="true" data-speed="800">
-                    <!-- Testimonial #1 -->
-                    <div class="testimonial-panel">
-                        <div class="testimonial--img">
-                            <img src="assets/images/testimonial/2.png" alt="Testimonial Author">
-                        </div>
-                        <div class="testimonial--body">
-                            <div class="testimonial--icon2"></div>
-                            <!-- .testimonial-icon end -->
-                            <p>Consultivo team ensure to provide best advice and products available in the whole market and we are efficient in our services. They keep an eye on provider's changes.</p>
-                        </div>
-                        <!-- .testimonial-body end -->
-                        <div class="testimonial--icon"></div>
-                        <!-- .testimonial-icon end -->
-                        <div class="testimonial--meta">
-                            <h4>Mahmoud Baghagho</h4>
-                            <p>7oroof Agency</p>
-                        </div>
-                        <!-- .testimonial-meta end -->
-                    </div>
-                    <!-- .testimonial-panel end -->
 
-                    <!-- Testimonial #2 -->
-                    <div class="testimonial-panel">
-                        <div class="testimonial--img">
-                            <img src="assets/images/testimonial/1.png" alt="Testimonial Author">
-                        </div>
-                        <div class="testimonial--body">
-                            <div class="testimonial--icon2"></div>
-                            <!-- .testimonial-icon end -->
-                            <p>Highly recommended & a great experience. The process was simple and easy to understand. Trading was straight forward, supports all major needs.!</p>
-                        </div>
-                        <!-- .testimonial-body end -->
-                        <div class="testimonial--icon"></div>
-                        <!-- .testimonial-icon end -->
-                        <div class="testimonial--meta">
-                            <h4>ayman fikry</h4>
-                            <p>zytheme</p>
-                        </div>
-                        <!-- .testimonial-meta end -->
-                    </div>
-                    <!-- .testimonial-panel end -->
 
-                    <!-- Testimonial #3 -->
-                    <div class="testimonial-panel">
-                        <div class="testimonial--img">
-                            <img src="assets/images/testimonial/3.png" alt="Testimonial Author">
-                        </div>
-                        <div class="testimonial--body">
-                            <div class="testimonial--icon2"></div>
-                            <!-- .testimonial-icon end -->
-                            <p>Highly recommended & a great experience. The process was simple and easy to understand. Trading was straight forward, the entire process was super smooth!</p>
-                        </div>
-                        <!-- .testimonial-body end -->
-                        <div class="testimonial--icon"></div>
-                        <!-- .testimonial-icon end -->
-                        <div class="testimonial--meta">
-                            <h4>Fouad badawy</h4>
-                            <p>Tie Labs Inc</p>
-                        </div>
-                        <!-- .testimonial-meta end -->
-                    </div>
-                    <!-- .testimonial-panel end -->
-                </div>
-            </div>
-            <!-- .col-lg-10 end -->
-        </div>
-        <!-- .row end -->
-    </div>
-    <!-- .container end -->
-</section>
-<!-- #testimonial1 end -->
 
-<!-- Team #1
-============================================= -->
-<section id="team1" class="team team-1 pt-110 pb-60">
-    <div class="container">
-        <div class="row clearfix">
-            <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-                <div class="heading  mb-50 text--center">
-                    <p class="heading--subtitle">Our Experts</p>
-                    <h2 class="heading--title">Meet Our Team</h2>
-                    <p class="heading--desc mb-0">We love what we do and we do it with passion. We value the reformation of the message, and the smart incentives.</p>
-                </div>
-            </div>
-            <!-- .col-lg-6 end -->
-        </div>
-        <!-- .row end -->
-        <div class="row">
-            <!-- Member #1 -->
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="member">
-                    <div class="member-img">
-                        <img src="assets/images/team/grid/1.jpg" alt="member">
-                        <div class="member-overlay">
-                            <div class="member-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                        <!-- .memebr-ovelay end -->
-                    </div>
-                    <!-- .member-img end -->
-                    <div class="member-info">
-                        <h5>James Wane</h5>
-                        <h6>Consultant</h6>
-                    </div>
-                    <!-- .member-info end -->
-                </div>
-                <!-- .member end -->
-            </div>
-            <!-- .col-md-4 end -->
 
-            <!-- Member #2 -->
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="member">
-                    <div class="member-img">
-                        <img src="assets/images/team/grid/2.jpg" alt="member">
-                        <div class="member-overlay">
-                            <div class="member-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                        <!-- .memebr-ovelay end -->
-                    </div>
-                    <!-- .member-img end -->
-                    <div class="member-info">
-                        <h5>John Tommy</h5>
-                        <h6>Marketing</h6>
-                    </div>
-                    <!-- .member-info end -->
-                </div>
-                <!-- .member end -->
-            </div>
-            <!-- .col-md-4 end -->
-
-            <!-- Member #3 -->
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="member">
-                    <div class="member-img">
-                        <img src="assets/images/team/grid/3.jpg" alt="member">
-                        <div class="member-overlay">
-                            <div class="member-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                        <!-- .memebr-ovelay end -->
-                    </div>
-                    <!-- .member-img end -->
-                    <div class="member-info">
-                        <h5>Marko Smith</h5>
-                        <h6>Cheif Officer</h6>
-                    </div>
-                    <!-- .member-info end -->
-                </div>
-                <!-- .member end -->
-            </div>
-            <!-- .col-md-4 end -->
-
-        </div>
-        <!-- .row end -->
-    </div>
-    <!-- .container end -->
-</section>
-<!-- #team1 end -->
 
 
 <!-- Case carousel
@@ -1027,7 +705,7 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                 <div class="heading heading-2 mb-30 text--center">
                     <p class="heading--subtitle">Our Projects</p>
                     <h2 class="heading--title">Case Studies</h2>
-                    <p class="heading--desc mb-0">We monitor the spectrum of available business investment and alert our users to market moving events as and when it happens.</p>
+                    <p class="heading--desc mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc faucibus a pellentesque sit amet porttitor eget.</p>
                 </div>
             </div>
             <!-- .col-lg-6 end -->
@@ -1054,10 +732,10 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                                     <!-- .case-img end -->
                                     <div class="case--content">
                                         <div class="case--cat">
-                                            <a href="#">Business Tips</a><a href="#">Consulting</a>
+                                            <a href="#">Lorem ipsum dolor sit amet</a>
                                         </div>
                                         <div class="case--title">
-                                            <h4><a href="case-study-single.html">Grow your business with an unexpected niche!</a></h4>
+                                            <h4><a href="case-study-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1078,11 +756,11 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                                     </div>
                                     <!-- .case-img end -->
                                     <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Investment</a><a href="#">Tips</a>
+                                                     <div class="case--cat">
+                                            <a href="#">Lorem ipsum dolor sit amet</a>
                                         </div>
                                         <div class="case--title">
-                                            <h4><a href="case-study-single.html">Use credit reporting to improve client relationships.</a></h4>
+                                            <h4><a href="case-study-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1103,91 +781,16 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                                     </div>
                                     <!-- .case-img end -->
                                     <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Customer Service</a><a href="#">Consulting</a>
+                                                 <div class="case--cat">
+                                            <a href="#">Lorem ipsum dolor sit amet</a>
                                         </div>
                                         <div class="case--title">
-                                            <h4><a href="case-study-single.html">State stamp duty surcharges for foreign buyers.</a></h4>
+                                            <h4><a href="case-study-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- . case-item end -->
-                            <!-- Case #4 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 case-item filter-environment filter-Consulting">
-                                <div class="case-item-container">
-                                    <div class="case--img">
-                                        <img src="assets/images/case/3col/4.jpg" alt="case Item">
-                                        <div class="case--hover">
-                                            <div class="case--action">
-                                                <a href="#" title="case Item"></a>
-                                            </div>
-                                            <!-- .case-action end -->
-                                        </div>
-                                        <!-- .case-hover end -->
-                                    </div>
-                                    <!-- .case-img end -->
-                                    <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Environment </a>
-                                        </div>
-                                        <div class="case--title">
-                                            <h4><a href="case-study-single.html">Government changes on transfer of land or duty. </a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- . case-item end -->
-                            <!-- Case #5 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 case-item filter-tips">
-                                <div class="case-item-container">
-                                    <div class="case--img">
-                                        <img src="assets/images/case/3col/5.jpg" alt="case Item">
-                                        <div class="case--hover">
-                                            <div class="case--action">
-                                                <a href="#" title="case Item"></a>
-                                            </div>
-                                            <!-- .case-action end -->
-                                        </div>
-                                        <!-- .case-hover end -->
-                                    </div>
-                                    <!-- .case-img end -->
-                                    <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Business Growth</a><a href="#">Investment</a>
-                                        </div>
-                                        <div class="case--title">
-                                            <h4><a href="case-study-single.html">How to explain the ASIC inquiry to clients!</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- . case-item end -->
-                            <!-- Case #6 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 case-item filter-consulting">
-                                <div class="case-item-container">
-                                    <div class="case--img">
-                                        <img src="assets/images/case/3col/6.jpg" alt="case Item">
-                                        <div class="case--hover">
-                                            <div class="case--action">
-                                                <a href="#" title="case Item"></a>
-                                            </div>
-                                            <!-- .case-action end -->
-                                        </div>
-                                        <!-- .case-hover end -->
-                                    </div>
-                                    <!-- .case-img end -->
-                                    <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Financial Services</a>
-                                        </div>
-                                        <div class="case--title">
-                                            <h4><a href="case-study-single.html">How blockchain technology will impact the broking?</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- . case-item end -->
+                           
                         </div>
                     </div>
                     <!-- .case-carousel-grid -->
@@ -1208,11 +811,11 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                                     </div>
                                     <!-- .case-img end -->
                                     <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Business Tips</a><a href="#">Consulting</a>
+                                                                        <div class="case--cat">
+                                            <a href="#">Lorem ipsum dolor sit amet</a>
                                         </div>
                                         <div class="case--title">
-                                            <h4><a href="case-study-single.html">Grow your business with an unexpected niche!</a></h4>
+                                            <h4><a href="case-study-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1233,11 +836,11 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                                     </div>
                                     <!-- .case-img end -->
                                     <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Investment</a><a href="#">Tips</a>
+                                                                      <div class="case--cat">
+                                            <a href="#">Lorem ipsum dolor sit amet</a>
                                         </div>
                                         <div class="case--title">
-                                            <h4><a href="case-study-single.html">Use credit reporting to improve client relationships.</a></h4>
+                                            <h4><a href="case-study-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -1258,91 +861,17 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                                     </div>
                                     <!-- .case-img end -->
                                     <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Customer Service</a><a href="#">Consulting</a>
+                                                                        <div class="case--cat">
+                                            <a href="#">Lorem ipsum dolor sit amet</a>
                                         </div>
                                         <div class="case--title">
-                                            <h4><a href="case-study-single.html">State stamp duty surcharges for foreign buyers.</a></h4>
+                                            <h4><a href="case-study-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- . case-item end -->
-                            <!-- Case #4 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 case-item filter-environment filter-Consulting">
-                                <div class="case-item-container">
-                                    <div class="case--img">
-                                        <img src="assets/images/case/3col/4.jpg" alt="case Item">
-                                        <div class="case--hover">
-                                            <div class="case--action">
-                                                <a href="#" title="case Item"></a>
-                                            </div>
-                                            <!-- .case-action end -->
-                                        </div>
-                                        <!-- .case-hover end -->
-                                    </div>
-                                    <!-- .case-img end -->
-                                    <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Environment </a>
-                                        </div>
-                                        <div class="case--title">
-                                            <h4><a href="case-study-single.html">Government changes on transfer of land or duty. </a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- . case-item end -->
-                            <!-- Case #5 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 case-item filter-tips">
-                                <div class="case-item-container">
-                                    <div class="case--img">
-                                        <img src="assets/images/case/3col/5.jpg" alt="case Item">
-                                        <div class="case--hover">
-                                            <div class="case--action">
-                                                <a href="#" title="case Item"></a>
-                                            </div>
-                                            <!-- .case-action end -->
-                                        </div>
-                                        <!-- .case-hover end -->
-                                    </div>
-                                    <!-- .case-img end -->
-                                    <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Business Growth</a><a href="#">Investment</a>
-                                        </div>
-                                        <div class="case--title">
-                                            <h4><a href="case-study-single.html">How to explain the ASIC inquiry to clients!</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- . case-item end -->
-                            <!-- Case #6 -->
-                            <div class="col-sm-12 col-md-6 col-lg-4 case-item filter-consulting">
-                                <div class="case-item-container">
-                                    <div class="case--img">
-                                        <img src="assets/images/case/3col/6.jpg" alt="case Item">
-                                        <div class="case--hover">
-                                            <div class="case--action">
-                                                <a href="#" title="case Item"></a>
-                                            </div>
-                                            <!-- .case-action end -->
-                                        </div>
-                                        <!-- .case-hover end -->
-                                    </div>
-                                    <!-- .case-img end -->
-                                    <div class="case--content">
-                                        <div class="case--cat">
-                                            <a href="#">Financial Services</a>
-                                        </div>
-                                        <div class="case--title">
-                                            <h4><a href="case-study-single.html">How blockchain technology will impact the broking?</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- . case-item end -->
+                    
                         </div>
                         <!-- .row end -->
                     </div>
@@ -1356,63 +885,6 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
 </section>
 <!-- #case carousel end -->
 
-<!-- Featured #3
-============================================= -->
-<section id="featured3" class="featured featured-2 featured-3 featured-left bg-dark3 pt-0 pb-0">
-    <div class="container-fluid pr-0 pl-0">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 col-content">
-                <div class="heading">
-                    <h2 class="heading--title color-white">We Are Here To Ease<br>The Financial Obstacles!</h2>
-                    <p class="heading--desc color-white">The choice is in your hands: Where do you go to get an advice and where you purchase products?!!</p>
-                </div>
-                <!-- Feature Card #1 -->
-                <div class="feature-card wow fadeInUp" data-wow-delay="100ms">
-                    <div class="feature-card-icon">
-                        <i class="icon-refresh"></i>
-                    </div>
-                    <div class="feature-card-content">
-                        <h3 class="feature-card-title">Innovative Solutions</h3>
-                        <p class="feature-card-desc">Innovative Solutions offers services, development services and consulting to help you make the best technology.</p>
-                    </div>
-                </div>
-                <!-- feature-card end -->
-                <!-- Feature Card #2 -->
-                <div class="feature-card wow fadeInUp" data-wow-delay="200ms">
-                    <div class="feature-card-icon">
-                        <i class="icon-speedometer"></i>
-                    </div>
-                    <div class="feature-card-content">
-                        <h3 class="feature-card-title">On Time Services</h3>
-                        <p class="feature-card-desc">Mutual funds from many investors to purchase broad range of investments, such as stocks, goals, and dreams.</p>
-                    </div>
-                </div>
-                <!-- feature-card end -->
-                <!-- Feature Card #3 -->
-                <div class="feature-card wow fadeInUp" data-wow-delay="300ms">
-                    <div class="feature-card-icon">
-                        <i class="icon-lifesaver"></i>
-                    </div>
-                    <div class="feature-card-content">
-                        <h3 class="feature-card-title">Best Support</h3>
-                        <p class="feature-card-desc">We bring the right people business solutions to challenge established thinking and drive transformation.</p>
-                    </div>
-                </div>
-                <!-- feature-card end -->
-            </div>
-            <!-- .col-lg-6 end -->
-            <div class="col-sm-12 col-md-12 col-lg-6 pr-0">
-                <div class="banner--img">
-                    <img src="assets/images/banners/1.jpg" alt="banner img">
-                </div>
-            </div>
-            <!-- .col-lg-6 end -->
-        </div>
-        <!-- .row end -->
-    </div>
-    <!-- .container end -->
-</section>
-<!-- #featured3 end -->
 
 <!-- CTA #1
 ============================================= -->
@@ -1420,11 +892,11 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-9">
-                <h3>Doing the Right Thing, at the Right Time!</h3>
+                <h3>Solutions Simplified with Metriken Integrated Business</h3>
             </div>
             <!-- .col-lg-9 -->
             <div class="col-sm-12 col-md-12 col-lg-3 text-right">
-                <a href="#" class="btn btn--white btn--bordered btn--rounded">Get Started</a>
+                <a href="#" class="btn btn--white btn--bordered btn--rounded">MIB Offerings</a>
             </div>
             <!-- .col-lg-3 -->
         </div>
@@ -1443,7 +915,7 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                 <div class="heading  mb-50 text--center">
                     <p class="heading--subtitle">Don’t Miss Latest</p>
                     <h2 class="heading--title">News & Headlines</h2>
-                    <p class="heading--desc mb-0">Follow our latest news and thoughts which focuses exclusively on design, art, vintage, and also our latest work updates.</p>
+                    <p class="heading--desc mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
             <!-- .col-lg-6 end -->
@@ -1462,16 +934,16 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                     <!-- .entry-img end -->
                     <div class="entry--content">
                         <div class="entry--meta">
-                            <a href="#">Investment tips</a>
+                            <a href="#">Lorem ipsum </a>
                         </div>
                         <div class="entry--title">
-                            <h4><a href="#">Four ways to cheer yourself up on Blue Monday!</a></h4>
+                            <h4><a href="#">Lorem ipsum dolor sit amet!</a></h4>
                         </div>
                         <div class="entry--date">
                             Apr 15, 2018
                         </div>
                         <div class="entry--bio">
-                            <p> The third Monday of January is supposed to be most depressing day of the year. Whether you believe that or not, the long nights, cold weather and trying to...</p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div class="entry--more">
                             <a href="#"><i class="fa fa-plus"></i>Read More</a>
@@ -1495,16 +967,16 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                     <!-- .entry-img end -->
                     <div class="entry--content">
                         <div class="entry--meta">
-                            <a href="#">Consulting</a>
+                            <a href="#">Lorem ipsum dolor sit amet</a>
                         </div>
                         <div class="entry--title">
-                            <h4><a href="#">In the news: this week’s top money stories</a></h4>
+                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
                         </div>
                         <div class="entry--date">
                             Apr 12, 2018
                         </div>
                         <div class="entry--bio">
-                            <p>The weather has taken a turn for the worse and January pay day still seems far away. But you don’t have to venture outdoors or spend any money today sit back, relax... </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
                         <div class="entry--more">
                             <a href="#"><i class="fa fa-plus"></i>Read More</a>
@@ -1528,16 +1000,16 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
                     <!-- .entry-img end -->
                     <div class="entry--content">
                         <div class="entry--meta">
-                            <a href="#">Financial</a>
+                            <a href="#">Lorem ipsum </a>
                         </div>
                         <div class="entry--title">
-                            <h4><a href="#">How does your household spend compare to the UK?</a></h4>
+                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
                         </div>
                         <div class="entry--date">
                             Apr 12, 2018
                         </div>
                         <div class="entry--bio">
-                            <p>The ‘cost of living’ is a phrase that’s rarely out of the news, and our wallets and bills appear to back up the claims that our household spending is on the rise... </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.... </p>
                         </div>
                         <div class="entry--more">
                             <a href="#"><i class="fa fa-plus"></i>Read More</a>
@@ -1580,5 +1052,10 @@ Offering Segmentation, Brand Engagement, Positioning & Targeting</p>
 <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <!-- RS Configration JS Files -->
 <script src="assets/js/rsconfig.js"></script>
+
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
+
 </body>
 </html>

@@ -1,16 +1,24 @@
 <?php require("PHPMailer/PHPMailerAutoload.php");
 
 // ADD your Email and Name
-$recipientEmail='wpgoocom@gmail.com';
-$recipientName='John Doe';
+$recipientEmail='maris7.cs@gmail.com';
+$recipientName='Maris Metriken';
 
 //collect the posted variables into local variables before calling $mail = new mailer
 
 $senderName = $_POST['contact-name'];
-$senderLast = $_POST['contact-last'];
+//$senderLast = $_POST['contact-last'];
 $senderTele = $_POST['contact-phone'];
 $senderEmail = $_POST['contact-email'];
 $senderSubject = 'New Message From' . $senderName . $senderEmail;
+
+$senderLocation = $_POST['contact-location'];
+
+$senderCompany= $_POST['contact-company'];
+
+$senderService = $_POST['contact-service'];
+
+
 $senderMessage = $_POST['contact-message'];
 
 //Create a new PHPMailer instance
@@ -27,7 +35,7 @@ $mail->Subject = $senderSubject;
 
 $mail->Body = "To view the message, please use an HTML compatible email viewer!"; // optional, comment out and test
 
-$mail->MsgHTML($body);
+//$mail->MsgHTML($body);
 $mail->AddAddress($recipientEmail, $recipientName);
 
 //$mail-&gt;AddAttachment("images/phpmailer.gif"); // attachment
@@ -36,10 +44,13 @@ $mail->AddAddress($recipientEmail, $recipientName);
 //now make those variables the body of the emails
 
 $mail->Body="
-Name: $senderName .$senderLast<br/>
-Phone: $senderTele<br/>
-Email: $senderEmail<br/>
-Suburb: $senderSubject<br/>
+Name: $senderName <br/>
+Phone: $senderTele <br/>
+Email: $senderEmail <br/>
+Location: $senderLocation <br/>
+Company: $senderCompany <br/>
+Service: $senderService <br/>
+Suburb: $senderSubject <br/>
 Message: $senderMessage";
 
 if(!$mail->Send()) {
